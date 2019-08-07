@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "water physics",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+            "-g",
+            "-o",
+            "water_physics",
+            "Water_Physics.cpp"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    }]
+}
