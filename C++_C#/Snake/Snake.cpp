@@ -3,9 +3,38 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <cmath>
 
 using namespace sf;
 using namespace std;
+
+//função de mapeamento
+float fmap(float n, float x1, float y1, float x2, float y2) {
+    return (n - x1) * (y2 - x2) / (y1 - x1) + x2;
+}
+
+//interpolação linear
+float lerp(float from, float to, float amnt) {
+    return from + amnt * (to - from);
+}
+
+//interpolação de cores
+Color color_interpolation(Color from, Color to, float amnt) {
+    //r
+    int r = lerp(unsigned(from.r), unsigned(to.r), amnt);
+
+    //g
+    int g = lerp(unsigned(from.g), unsigned(to.g), amnt);
+
+    //b
+    int b = lerp(unsigned(from.b), unsigned(to.b), amnt);
+
+    //a
+    int a = lerp(unsigned(from.a), unsigned(to.a), amnt);
+
+    //retorna essa cor
+    return Color(r, g, b, a);
+}
 
 //ponto no plano cartesiano
 class point {
@@ -41,6 +70,72 @@ class point {
         }
 };
 
+//gradient
+class gradient {
+public:
+    vector<Color> colors;
+    vector<float> offsets;
+
+    //construtor com argumentos
+    gradient(vector<Color> _colors, vector<float> _offsets) {
+        colors = _colors;
+        offsets = _offsets;
+    }
+
+    //construtor padrão
+    gradient() {}
+
+    //adiciona uma cor
+    void add_color(Color color, float offset) {
+        colors.push_back(color);
+        offsets.push_back(offset);
+    }
+
+    //interpolação
+    Color interpolate(float offset) {
+        //cor de
+        Color c_from;
+
+        //cor para
+        Color c_to;
+
+        //offset de
+        float off_from;
+
+        //offset para
+        float off_to;
+
+        //passa por cada index
+        for (int i = 0; i < offsets.size(); i++) {
+            //caso o offset é maior que este offset, muda o offset de
+            //0.0 - 0.5
+            //0.25
+            if (offset >= offsets[i]) {
+                c_from = colors[i];
+                off_from = offsets[i];
+            }
+
+            //index invertido
+            int inv_i = (offsets.size() - 1) - i;
+
+            //caso o offset é menor que este offset, muda o offset para
+            if (offset <= offsets[inv_i]) {
+                c_to = colors[inv_i];
+                off_to = offsets[inv_i];
+            }
+        }
+
+        //quantidade de interpolação
+        float int_amnt = fmap(offset, off_from, off_to, 0, 1);
+
+        //cout << c_from.r << ", " << c_from.g << ", " << c_from.b << ", " << c_to.a << endl;
+        //cout << c_to.r << ", " << c_to.g << ", " << c_to.b << ", " << c_to.a << endl;
+
+        //retorna interpolação
+        return color_interpolation(c_from, c_to, int_amnt);
+    }
+};
+
 //tamanho do pixel
 const int PIXEL_SIZE = 4;
 
@@ -68,6 +163,9 @@ point dir = point(1, 0);
 
 //delay para cada frame
 float delay = 0.1f;
+
+//gradiente
+gradient snake_gradient;
 
 //retorna uma localização aleatória no grid
 point rand_location(int seed = -1) {
@@ -97,8 +195,12 @@ void _ready(RenderWindow& window) {
 
 //renderiza
 void _render(RenderWindow& window) {
+
     //retângulo
     RectangleShape head_shape = RectangleShape(Vector2f(PIXEL_SIZE, PIXEL_SIZE));
+
+    //muda a cor
+    head_shape.setFillColor(snake_gradient.interpolate(0.5));
 
     //posição do retângulo
     head_shape.setPosition(Vector2f(head.x * PIXEL_SIZE, head.y * PIXEL_SIZE));
@@ -113,6 +215,14 @@ void _render(RenderWindow& window) {
 
         //posição do retângulo
         body_shape.setPosition(Vector2f(body[i].x * PIXEL_SIZE, body[i].y * PIXEL_SIZE));
+
+        cout << fmap(sin(i * 0.01) * , -1, 1, 0, 1) << endl;
+
+        //cor
+        Color body_color = snake_gradient.interpolate(fmap(sin(i * 0.01), -1, 1, 0, 1));
+
+        //muda a cor do corpo
+        body_shape.setFillColor(body_color);
 
         //desenha o retângulo
         window.draw(body_shape);
@@ -177,6 +287,12 @@ void _process(RenderWindow& window) {
 
 //função principal
 int main() {
+    snake_gradient.add_color(Color(255, 0, 0), 0.0);
+    snake_gradient.add_color(Color(0, 255, 0), 0.5);
+    snake_gradient.add_color(Color(0, 0, 255), 0.1);
+
+    //cout << snake_gradient.interpolate(0.3).r << ", " << snake_gradient.interpolate(0.3).g << ", " << snake_gradient.interpolate(0.3).b;
+
     //janela
     RenderWindow window(VideoMode(GRID_SIZE_X * PIXEL_SIZE, GRID_SIZE_Y * PIXEL_SIZE), "Snake game");
 

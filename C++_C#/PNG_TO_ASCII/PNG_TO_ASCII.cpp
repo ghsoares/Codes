@@ -22,6 +22,8 @@ int main() {
         string path;
         cout << "Insira o caminho da imagem: ";
         cin >> path;
+
+        //carregado com sucesso
         if(image.loadFromFile(path)) {
             break;
         }

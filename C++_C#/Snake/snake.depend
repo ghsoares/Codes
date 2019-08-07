@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1565181268 source:c:\users\aluno\documents\github\codes\c++_c#\snake\snake.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+
+1565180975 source:c:\users\aluno\documents\github\codes\c++_c#\snake\src\gradient.cpp
+	"gradient.h"
+
+1565180909 c:\users\aluno\documents\github\codes\c++_c#\snake\include\gradient.h
+
