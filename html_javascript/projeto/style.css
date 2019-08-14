@@ -3,6 +3,9 @@
     height: 800px;
     background-color: #D301FF;
     margin: auto;
+    border-radius: 32px;
+    border: solid transparent;
+    overflow: hidden;
 }
 
 #center {
