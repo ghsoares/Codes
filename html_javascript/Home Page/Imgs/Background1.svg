@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: http://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="245.79pt"
+    height="144pt"
+    viewBox="0 0 245.79 144">
+<defs/>
+<rect id="shape0" transform="matrix(1.00000002235174 0 0 1 -30.2400006759167 -19.44)" fill="none" stroke="#62f9ff" stroke-width="9.6" stroke-linecap="square" stroke-linejoin="bevel" width="306" height="186.72"/><rect id="shape0" transform="translate(7.02, 52.92)" fill="#ff0000" fill-rule="evenodd" width="103.41" height="61.29"/><rect id="shape1" transform="translate(132.84, 79.74)" fill="#00ffe3" fill-rule="evenodd" width="13.5" height="15.93"/><rect id="shape2" transform="translate(-36.72, -29.16)" fill="#00fff3" fill-rule="evenodd" width="333.72" height="219.24"/><path id="shape3" transform="translate(-12.2399998324266, -8.63999988171286)" fill="#00b1ce" fill-rule="evenodd" d="M0 85.68L110.88 185.76L301.32 152.64L272.88 1.8L12.24 0L0 85.68"/><path id="shape4" transform="translate(-11.1599998472124, -15.1199997929975)" fill="#0072a1" fill-rule="evenodd" d="M0 21.24L97.2 107.28L177.84 132.48L264.96 114.48L275.76 15.12L114.84 0L0.36 5.4"/><path id="shape5" transform="translate(39.4199982584245, -23.7599989502833)" fill="#003774" fill-rule="evenodd" d="M0 9.72L42.66 92.34L124.2 132.84L225.72 119.34L246.78 0"/><path id="shape6" transform="translate(90.7199932259961, -32.3999975807129)" fill="#000774" fill-rule="evenodd" d="M0 17.82L9.18 83.16L76.14 129.06L160.92 124.74L189 0"/><path id="shape7" transform="translate(137.159995815702, -34.5599989456887)" fill="#3d00af" fill-rule="evenodd" d="M29.16 17.28L29.16 17.28L0 8.91L32.94 0L39.15 15.93L29.16 17.28"/><path id="shape8" transform="translate(118.799996375805, -18.7199994289147)" fill="#3d00af" fill-rule="evenodd" d="M5.76 11.52L0 61.56L48.24 110.88L141.12 87.48L161.28 0"/>
+</svg>
