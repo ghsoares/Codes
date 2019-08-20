@@ -8,69 +8,41 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
+
+    background-color: rgb(0, 183, 255)
+    
 }
 
-.climate-box::after {
-    content: '';
-    display: block;
+i {
+    position: absolute;
+
+    top: 64px;
+
+    font-size: 64px;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 174, 255, 0.7), rgba(255, 255, 255, 0.7));
+    color: white;
+
+    text-align: center;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.side-bar {
+.temperature {
     position: absolute;
-    max-width: 96px;
-    max-height: 100%;
-    width: 0;
-    height: 100%;
-    background-color: rgba(1, 0, 59, 0.9);
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-    transition: width 0.5s;
-}
 
-.options-button {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    border: none;
-    padding: 0;
-    left: 16px;
-    top: 12px;
-    outline: none;
-    background: none;
-}
-
-.options-button>#b1 {
-    position: absolute;
-    content: '';
-    display: block;
     width: 100%;
-    height: 15%;
-    top: 0px;
-    background-color: black;
-    border-radius: 2px;
-    transition: all 0.5s;
+    top: 128px;
+
+    text-align: center;
+    font-size: 64px;
+
+    font-family: BloggerSans;
+    color: white;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.options-button>#b2 {
-    position: absolute;
-    width: 100%;
-    height: 15%;
-    top: 45%;
-    background-color: black;
-    border-radius: 2px;
-    transition: all 0.5s;
-}
-
-.options-button>#b3 {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 15%;
-    bottom: 0px;
-    background-color: black;
-    border-radius: 2px;
-    transition: all 0.5s;
+@font-face {
+    font-family: BloggerSans;
+    src: url(fonts/BloggerSans/BloggerSans.ttf);
 }
