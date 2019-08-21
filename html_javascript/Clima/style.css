@@ -5,42 +5,92 @@
     width: 256px;
     height: 512px;
     margin: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
-
     background-color: rgb(0, 183, 255)
-    
 }
 
 i {
     position: absolute;
-
     top: 64px;
-
     font-size: 64px;
     width: 100%;
     color: white;
-
     text-align: center;
-
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .temperature {
     position: absolute;
-
     width: 100%;
     top: 128px;
-
     text-align: center;
     font-size: 64px;
-
     font-family: BloggerSans;
     color: white;
-
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+
+.city {
+    position: absolute;
+    width: 100%;
+    top: 256px;
+    text-align: center;
+    font-size: 32px;
+    font-family: BloggerSans;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu-container {
+    position: absolute;
+    width: 64px;
+    height: 100%;
+}
+
+.menu-button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: solid 0 transparent;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-content {
+    width: 32px;
+    height: 32px;
+    border-radius: 0 0 16px 0;
+    background-color: rgb(35, 0, 92);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: height 0.5s ease-in-out, border-radius 0.5s ease-in-out, width 0.5s ease-in-out 0.5s;
+}
+
+.menu-button>div {
+    position: relative;
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: white;
+    border-radius: 16px;
+    pointer-events: none;
+    transition: all 0.5s;
+    left: 4px;
+    top: -2px;
+}
+
+.menu-animation #bar1 {
+    transform: rotate(45deg) translate(3px, -1px);
+}
+
+.menu-animation #bar3 {
+    transform: rotate(-45deg) translate(2px, 1px);
+}
+
+.menu-animation-content {}
 
 @font-face {
     font-family: BloggerSans;
