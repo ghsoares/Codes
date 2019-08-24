@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="1178.8613"
-     inkscape:cy="752.42939"
+     inkscape:zoom="0.35"
+     inkscape:cx="1415.6131"
+     inkscape:cy="733.63912"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -36,16 +36,14 @@
      inkscape:window-height="745"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:snap-tangential="false">
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid4638"
        units="cm"
        spacingx="9.9999996"
        spacingy="9.9999996"
-       empspacing="4"
-       dotted="false" />
+       empspacing="4" />
   </sodipodi:namedview>
   <metadata
      id="metadata4633">
@@ -55,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,9 +63,9 @@
      id="layer1"
      transform="translate(0,22.999985)">
     <path
-       style="fill:#6582ff;fill-opacity:1;stroke-width:0.99999994"
-       d="M 0 0 L 0 226.77148 L 0 453.54297 L 0 1209.4492 L 1209.4492 1209.4492 L 1209.4492 453.54297 L 1209.4492 226.77148 L 1209.4492 0 A 226.77164 226.77164 0 0 0 982.67773 226.77148 A 377.95273 377.95273 0 0 1 604.72461 604.72461 A 377.95273 377.95273 0 0 1 226.77148 226.77148 A 226.77164 226.77164 0 0 0 0 0 z "
-       transform="matrix(0.26458333,0,0,0.26458333,0,-22.999985)"
-       id="path93" />
+       style="fill:#6582ff;fill-opacity:1;stroke-width:0.26458332"
+       d="M -1.06956e-4,-23.000073 V 297.00002 H 79.999661 239.9997 319.99999 V -23.000073 A 79.999992,59.999996 0 0 0 239.9997,36.99988 79.999992,59.999996 0 0 1 159.99994,96.999836 79.999992,59.999996 0 0 1 79.999661,36.99988 79.999992,59.999996 0 0 0 -1.06956e-4,-23.000073 Z"
+       id="rect4648"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
