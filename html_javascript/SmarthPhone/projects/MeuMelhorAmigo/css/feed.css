@@ -1,0 +1,89 @@
+#posts-list {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    margin-bottom: 16em;
+    box-sizing: border-box;
+}
+
+.post {
+    box-sizing: border-box;
+    margin: 2em 0;
+    padding-bottom: 0.5em;
+    width: 100%;
+    box-shadow: 0 0 1.5em #00000077;
+    border-radius: 1em;
+}
+
+.post-top {
+    position: relative;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+}
+
+.post-profile-img {
+    width: 5em;
+    height: 5em;
+    border-radius: 5em;
+}
+
+.post-profile-name {
+    margin-left: 0.5em;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post-images {
+    height: 32em;
+    padding-left: 0.5em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.post-image {
+    display: inline;
+    list-style-type: none;
+    margin: 0 0.5em;
+}
+
+.post-image > img {
+    height: 30em;
+}
+
+.post-options {
+    height: 6em;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 0.5em;
+}
+
+.post-options > li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+.post-option {
+    width: 6em;
+    height: 6em;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.post-option > i {
+    font-size: 5em;
+    pointer-events: none;
+}
+
+.post-description {
+    margin: 0;
+    padding-left: 0.75em;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+}

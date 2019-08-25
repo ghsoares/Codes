@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="1178.8613"
-     inkscape:cy="752.42939"
+     inkscape:cx="701.54932"
+     inkscape:cy="1146.3992"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -37,7 +37,9 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-tangential="false">
+     inkscape:snap-tangential="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid4638"
@@ -55,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,9 +67,9 @@
      id="layer1"
      transform="translate(0,22.999985)">
     <path
-       style="fill:#6582ff;fill-opacity:1;stroke-width:0.99999994"
-       d="M 0 0 L 0 226.77148 L 0 453.54297 L 0 1209.4492 L 1209.4492 1209.4492 L 1209.4492 453.54297 L 1209.4492 226.77148 L 1209.4492 0 A 226.77164 226.77164 0 0 0 982.67773 226.77148 A 377.95273 377.95273 0 0 1 604.72461 604.72461 A 377.95273 377.95273 0 0 1 226.77148 226.77148 A 226.77164 226.77164 0 0 0 0 0 z "
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 0 0 L 0 1209.4492 L 1209.4492 1209.4492 L 1209.4492 0 L 982.67773 0 A 377.95273 377.95273 0 0 1 604.72461 377.95312 A 377.95273 377.95273 0 0 1 226.77148 0 L 0 0 z "
        transform="matrix(0.26458333,0,0,0.26458333,0,-22.999985)"
-       id="path93" />
+       id="rect6353" />
   </g>
 </svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866666"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="comment.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="78.366853"
+     inkscape:cy="52.172883"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       empspacing="8"
+       spacingx="0.13229166"
+       spacingy="0.13229166" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-263.13334)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 105.71094 7.90625 C 105.24552 7.9121529 104.7789 7.9435244 104.3125 8 L 21.828125 8 C 13.82055 7.7819213 7.0940664 15.497696 8.0019531 23.376953 C 8.0016829 54.021363 7.9969641 84.666012 8.0019531 115.3125 C 17.105494 106.20834 26.208639 97.103824 35.3125 88 C 59.400919 87.952378 83.495481 88.095167 107.58008 87.927734 C 115.18605 87.331816 120.9036 79.774913 120 72.3125 C 119.95279 55.015719 120.09452 37.712886 119.92773 20.419922 C 119.36909 13.289335 112.69223 7.8177062 105.71094 7.90625 z M 21.828125 16.001953 L 106.17383 16.001953 C 111.27241 15.830363 112.45829 21.223743 111.99805 25.238281 L 111.99805 74.173828 C 112.16979 79.272411 106.77626 80.45828 102.76172 79.998047 C 79.175252 79.999332 55.58321 79.995427 32 80 L 16 96 C 16.002628 71.271458 15.996304 46.551879 15.996094 21.826172 C 15.890018 18.663236 18.665668 15.896126 21.828125 16.001953 z M 32 28 A 3.9999996 3.9999996 0 0 0 28 32 A 3.9999996 3.9999996 0 0 0 32 36 L 96 36 A 3.9999996 3.9999996 0 0 0 100 32 A 3.9999996 3.9999996 0 0 0 96 28 L 32 28 z M 32 44 A 3.9999996 3.9999996 0 0 0 28 48 A 3.9999996 3.9999996 0 0 0 32 52 L 96 52 A 3.9999996 3.9999996 0 0 0 100 48 A 3.9999996 3.9999996 0 0 0 96 44 L 32 44 z M 32 60 A 3.9999996 3.9999996 0 0 0 28 64 A 3.9999996 3.9999996 0 0 0 32 68 L 76 68 A 3.9999996 3.9999996 0 0 0 80 64 A 3.9999996 3.9999996 0 0 0 76 60 L 32 60 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,263.13334)"
+       id="rect1680" />
+  </g>
+</svg>

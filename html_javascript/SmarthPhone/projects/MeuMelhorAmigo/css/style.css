@@ -4,7 +4,7 @@ globais
 */
 :root {
     --bottom-navbar-background: rgb(103, 187, 255);
-    --main-button-color: rgb(129, 255, 207);
+    --main-button-color: rgb(255, 255, 255);
 }
 
 html {
@@ -14,6 +14,7 @@ html {
 body {
     margin: 0;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 #main {
@@ -21,32 +22,23 @@ body {
 }
 
 #viewport {
-    position: relative;
+    position: absolute;
     height: 100%;
+    width: 100%;
+    pointer-events: none;
 }
 
+/*
 #viewport-top {
     height: 2.5em;
 }
-
-#tabs {
-    background: var(--bottom-navbar-background);
-    list-style-type: none;
-    box-sizing: border-box;
-    padding: 0.5em;
-    margin: 0;
-    height: 3em;
-}
-
-#tabs > li {
-    display: inline;
-}
+*/
 
 #viewport-bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4em;
+    height: 10em;
 }
 
 #bottom-navbar {
@@ -55,7 +47,9 @@ body {
     filter: drop-shadow(0 0 0.25em #000000dc);
 }
 
-#bottom-navbar-left, #bottom-navbar-right {
+#bottom-navbar-left,
+#bottom-navbar-right {
+    position: relative;
     flex: 1;
     background: var(--bottom-navbar-background);
 }
@@ -64,8 +58,8 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 4em;
-    height: 4em;
+    width: 16em;
+    height: 16em;
 }
 
 #bottom-navbar-center::after {
@@ -73,18 +67,86 @@ body {
     display: block;
     position: absolute;
     background: var(--bottom-navbar-background);
-    width: 100%;
+    width: 103%;
     height: 100%;
     -webkit-mask-image: url("../img/bottom_navbar_center.svg");
     -webkit-mask-size: 100%;
+    mask-image: url("../img/bottom_navbar_center.svg");
+    mask-size: 100%;
 }
 
 #main-button {
     position: relative;
-    width: 2em;
-    height: 2em;
+    width: 10em;
+    height: 10em;
+    bottom: 5em;
     border: none;
-    border-radius: 2em;
+    border-radius: 6em;
     padding: 0;
     background-color: var(--main-button-color);
+    background-image: url("../img/icons/main_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    outline: none;
+    pointer-events: all;
+}
+
+.bottom-navbar-button {
+    width: 8em;
+    height: 8em;
+    text-align: center;
+    padding: 0;
+    border-radius: 5em;
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 1em #000000dc;
+    pointer-events: all;
+}
+
+.bottom-navbar-button > i {
+    font-size: 6em;
+    pointer-events: none;
+}
+
+.active > i {
+    color: lightblue;
+}
+
+#home-button {
+    position: absolute;
+    right: 14em;
+    top: 2em;
+}
+
+#search-button {
+    position: absolute;
+    right: 0.5em;
+    top: 2em;
+}
+
+#like-button {
+    position: absolute;
+    left: 0.5em;
+    top: 2em;
+}
+
+#profile-button {
+    position: absolute;
+    left: 14em;
+    top: 2em;
+}
+
+#app-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: scroll;
 }
