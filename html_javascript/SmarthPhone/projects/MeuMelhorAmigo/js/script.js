@@ -24,7 +24,7 @@ function ready() {
     tabButtonsEvents();
 
     //adiciona os links
-    addLink($("#search-button")[0], "tabs/feed.html");
+    addLink($("#home-button")[0], "tabs/feed.html");
 }
 
 //pega os elementos da página

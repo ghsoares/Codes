@@ -8,24 +8,27 @@ globais
 }
 
 html {
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
-    overflow: hidden;
-    touch-action: manipulation;
 }
 
 #main {
-    height: 100vh;
+    height: 100%;
 }
 
 #viewport {
-    position: absolute;
     height: 100%;
     width: 100%;
     pointer-events: none;
+    position: fixed;
+    bottom: 0;
 }
 
 /*
@@ -42,46 +45,34 @@ body {
 }
 
 #bottom-navbar {
-    height: 100%;
-    display: flex;
-    filter: drop-shadow(0 0 0.25em #000000dc);
-}
-
-#bottom-navbar-left,
-#bottom-navbar-right {
-    position: relative;
-    flex: 1;
-    background: var(--bottom-navbar-background);
-}
-
-#bottom-navbar-center {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 16em;
-    height: 16em;
-}
-
-#bottom-navbar-center::after {
-    content: '';
-    display: block;
     position: absolute;
-    background: var(--bottom-navbar-background);
-    width: 103%;
+    display: inline-block;
+    list-style-type: none;
+    box-sizing: border-box;
     height: 100%;
-    -webkit-mask-image: url("../img/bottom_navbar_center.svg");
-    -webkit-mask-size: 100%;
-    mask-image: url("../img/bottom_navbar_center.svg");
-    mask-size: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 1em #000000dc;
+    background-color: var(--bottom-navbar-background);
+    text-align: center;
+    padding-bottom: 2em;
+    z-index: -1;
+}
+
+#bottom-navbar > li {
+    position: relative;
+    display: inline;
+    margin: 0 2em;
 }
 
 #main-button {
     position: relative;
     width: 10em;
     height: 10em;
-    bottom: 5em;
     border: none;
     border-radius: 6em;
+    bottom: 3em;
     padding: 0;
     background-color: var(--main-button-color);
     background-image: url("../img/icons/main_button.svg");
@@ -90,9 +81,25 @@ body {
     background-size: 100%;
     outline: none;
     pointer-events: all;
+    box-shadow: 0 0 1em #000000dc;
+}
+
+#main-button span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10em;
+    background-color: var(--bottom-navbar-background);
+    box-shadow: 0 0 0 2em var(--bottom-navbar-background),
+                0 0 1em 3em #71ff9c6e;
+    z-index: -1;
 }
 
 .bottom-navbar-button {
+    position: relative;
+    bottom: 1em;
     width: 8em;
     height: 8em;
     text-align: center;
@@ -111,31 +118,7 @@ body {
 }
 
 .active > i {
-    color: lightblue;
-}
-
-#home-button {
-    position: absolute;
-    right: 14em;
-    top: 2em;
-}
-
-#search-button {
-    position: absolute;
-    right: 0.5em;
-    top: 2em;
-}
-
-#like-button {
-    position: absolute;
-    left: 0.5em;
-    top: 2em;
-}
-
-#profile-button {
-    position: absolute;
-    left: 14em;
-    top: 2em;
+    color: rgb(114, 0, 44);
 }
 
 #app-main {
