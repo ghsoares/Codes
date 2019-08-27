@@ -12,7 +12,8 @@
     padding-bottom: 0.5em;
     width: 100%;
     box-shadow: 0 0 1.5em #00000077;
-    border-radius: 1em;
+    border-radius: 2em;
+    overflow: hidden;
 }
 
 .post-top {
@@ -37,11 +38,15 @@
 }
 
 .post-images {
-    height: 32em;
+    box-sizing: border-box;
+    margin: 0 3em;
+    height: 34em;
     padding-left: 0.5em;
+    padding-bottom: 0.75em;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    align-content: center;
 }
 
 .post-image {
@@ -50,8 +55,11 @@
     margin: 0 0.5em;
 }
 
-.post-image > img {
-    height: 30em;
+.post-image>img {
+    width: 80vw;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .post-options {
@@ -61,7 +69,7 @@
     padding-left: 0.5em;
 }
 
-.post-options > li {
+.post-options>li {
     display: inline;
     list-style-type: none;
     margin: 0 1em;
@@ -75,7 +83,7 @@
     background: none;
 }
 
-.post-option > i {
+.post-option>i {
     font-size: 5em;
     pointer-events: none;
 }

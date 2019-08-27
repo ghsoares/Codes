@@ -2,15 +2,25 @@
 function ready() {
     newPost(
         "https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png",
-        "GDGameDev", [],
+        "GDGameDev", [
+            "https://developers.google.com/web/tools/chrome-devtools/remote-debugging/imgs/add-rule.png?hl=pt-br",
+            "https://developers.google.com/web/tools/chrome-devtools/remote-debugging/imgs/add-rule.png?hl=pt-br",
+            "https://icon-library.net/images/placeholder-image-icon/placeholder-image-icon-7.jpg"
+        ],
         "Things intention like side perhaps thanks articles dog of flooding once expenses. Who text us successful members doctor's but so desk. Council’s again similar over hypnotised ask wish designed name. Psychiatrist middle fifteen profanities data."
     );
     newPost(
         "https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png",
-        "GDGameDev", [],
+        "GDGameDev", [
+            "https://icon-library.net/images/placeholder-image-icon/placeholder-image-icon-7.jpg",
+            "https://icon-library.net/images/placeholder-image-icon/placeholder-image-icon-7.jpg",
+            "https://icon-library.net/images/placeholder-image-icon/placeholder-image-icon-7.jpg"
+        ],
         "Things intention like side perhaps thanks articles dog of flooding once expenses. Who text us successful members doctor's but so desk. Council’s again similar over hypnotised ask wish designed name. Psychiatrist middle fifteen profanities data."
     );
 }
+
+
 
 //cria um novo post
 function newPost(profile_image, profile_name, post_images_series, post_description_text) {
@@ -51,6 +61,13 @@ function newPost(profile_image, profile_name, post_images_series, post_descripti
 
         //novo img (filho do .post-image)
         var img = document.createElement("img");
+        img.style.background = "grey";
+
+        //quando carregar
+        img.onload = (ev) => {
+            img = ev.path[0];
+            img.style.background = "none";
+        }
 
         //imagem
         img.src = image;
@@ -89,7 +106,7 @@ function newPost(profile_image, profile_name, post_images_series, post_descripti
     //novo ícone comment
     var comment_icon = document.createElement("i");
     comment_icon.classList.add("icon-comment");
-    
+
     //novo div .post-description (filho do .post)
     var post_description = document.createElement("div");
     post_description.classList.add("post-description");
@@ -111,7 +128,7 @@ function newPost(profile_image, profile_name, post_images_series, post_descripti
     if (post_description_text.length > 64) {
         //divide o texto
         var before = post_description_text.slice(0, 64);
-        var after = post_description_text;
+        var after = post_description_text.slice(64, post_description.length);
 
         //novo span .dots (filho do p)
         var dots = document.createElement("span");

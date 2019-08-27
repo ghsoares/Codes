@@ -24,7 +24,7 @@ function ready() {
     tabButtonsEvents();
 
     //adiciona os links
-    addLink($("#home-button")[0], "tabs/feed.html");
+    addLink(tab_buttons[0], "tabs/feed.html");
 }
 
 //pega os elementos da página
@@ -58,6 +58,18 @@ function tabButtonsEvents() {
 
 //adiciona um link para uma página
 function addLink(button, page) {
+    //verifica se o botão é o atual
+    if (button.classList.contains("active")) {
+        //verifica o iframe já é ou não a página
+        if (actual_page != page) {
+            //muda a página do iframe
+            page_iframe.src = page;
+
+            //muda a página atual
+            actual_page = page;
+        }
+    }
+
     //ação ao clicar
     button.addEventListener("click", (e) => {
         //verifica o iframe já é ou não a página
