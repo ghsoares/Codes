@@ -14,6 +14,7 @@
     box-shadow: 0 0 1.5em #00000077;
     border-radius: 2em;
     overflow: hidden;
+    background-color: white;
 }
 
 .post-top {
