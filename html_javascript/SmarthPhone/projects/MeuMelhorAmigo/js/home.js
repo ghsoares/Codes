@@ -20,8 +20,6 @@ function ready() {
     );
 }
 
-
-
 //cria um novo post
 function newPost(profile_image, profile_name, post_images_series, post_description_text) {
     //pega a lista de posts
