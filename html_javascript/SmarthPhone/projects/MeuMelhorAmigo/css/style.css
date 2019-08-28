@@ -46,13 +46,33 @@ body {
 }
 
 #loading {
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 8em;
     margin: 0 auto;
-    background-color: black;
     overflow: hidden;
     transform: translateY(-10em);
-    transition: transform 0.5s;
+    transition: transform 0.25s;
+}
+
+#loading>svg {
+    height: 100%;
+    width: 100%;
+    stroke-dasharray: 45;
+    animation: loading 1s infinite;
+    filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
+}
+
+#loading>svg>path {
+    stroke-opacity: 1;
+}
+
+@keyframes loading {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
 }
 
 #viewport-bottom {
