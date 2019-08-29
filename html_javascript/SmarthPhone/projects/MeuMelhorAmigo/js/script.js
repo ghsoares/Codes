@@ -15,7 +15,7 @@ preload();
 
 //antes de iniciar a página
 function preload() {
-
+    logged();
 }
 
 //inicia com a página
@@ -28,10 +28,18 @@ function ready() {
 
     //adiciona os links
     addLink(tab_buttons[0], "tabs/home.html");
-    addLink(tab_buttons[3], "tabs/register.html");
+    addLink(tab_buttons[3], "tabs/user.html");
 
     //quando o iframe carregar
     page_iframe.onload = loaded;
+}
+
+//verifica se já logou no site
+function logged() {
+    var login_data = getCookie("log");
+    if (!login_data) {
+        window.location.href = "login.html";
+    }
 }
 
 //pega os elementos da página

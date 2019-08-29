@@ -17,13 +17,17 @@
 <body onload="ready()">
     <div id="register-container">
         <h1 id="title"> SIGN UP </h1>
-        <form onsubmit="submitForm(); return false">
+        <form onsubmit="submitForm(this); return false">
             <input spellcheck="false" type="text" placeholder="Nick-Name" name="NickName">
             <input spellcheck="false" type="text" placeholder="Email" name="Email">
             <input spellcheck="false" type="password" placeholder="Password" name="Password">
+            <input spellcheck="false" type="password" placeholder="Repeat Password" name="RepatedPassword">
             <input type="submit" value="GET STARTED">
         </form>
     </div>
+    <button id="redirect" onclick="window.location.href = 'login.html'">
+        I already have an account
+    </button>
 </body>
 
 </html>

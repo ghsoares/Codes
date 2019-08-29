@@ -1,6 +1,9 @@
 //tempo antes de esconder o alerta
 var hideAlertTime;
 
+//login atual
+var currentLogin = {};
+
 //novo alerta
 function alert(title, text, backgroundColor = "rgb(129, 255, 161)", textColor = "black") {
     //div do alerta
