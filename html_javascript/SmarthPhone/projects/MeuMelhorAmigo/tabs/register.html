@@ -10,13 +10,14 @@
     <script src="../js/live.js"></script>
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/tab.js"></script>
+    <script src="../js/cookie.js"></script>
     <script src="../js/register.js"></script>
 </head>
 
 <body onload="ready()">
     <div id="register-container">
         <h1 id="title"> SIGN UP </h1>
-        <form>
+        <form onsubmit="submitForm(); return false">
             <input spellcheck="false" type="text" placeholder="Nick-Name" name="NickName">
             <input spellcheck="false" type="text" placeholder="Email" name="Email">
             <input spellcheck="false" type="password" placeholder="Password" name="Password">

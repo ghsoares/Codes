@@ -45,21 +45,42 @@ body {
     width: 100%;
 }
 
+#alert {
+    width: 32em;
+    height: 12em;
+    margin: 0 auto;
+    transform: translateY(-20em);
+    background-color: rgb(129, 255, 161);
+    border-radius: 1em;
+    transition: transform 1s;
+}
+
+#alert-title {
+    text-align: center;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#alert-text {
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #loading {
     width: 8em;
     height: 8em;
     margin: 0 auto;
     overflow: hidden;
-    transform: translateY(-10em);
-    transition: transform 0.25s;
+    transform: translateY(-10em) rotateZ(45deg);
+    transition: transform 0.75s;
 }
 
 #loading>svg {
     height: 100%;
     width: 100%;
-    stroke-dasharray: 45;
+    stroke-dasharray: 117;
     animation: loading 1s infinite;
-    filter: drop-shadow(0px 0px 8px rgb(255, 255, 255));
 }
 
 #loading>svg>path {
@@ -71,7 +92,7 @@ body {
         stroke-dashoffset: 0;
     }
     to {
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 232;
     }
 }
 

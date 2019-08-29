@@ -68,12 +68,12 @@ function tabButtonsEvents() {
 
 //uma página está carregando
 function loading() {
-    loading_div.style.transform = "translateY(10em)";
+    loading_div.style.transform = "translateY(10em) rotateZ(45deg)";
 }
 
 //uma página carregou
 function loaded() {
-    loading_div.style.transform = "translateY(-10em)";
+    loading_div.style.transform = "translateY(-30em) rotateZ(45deg)";
 }
 
 //adiciona um link para uma página

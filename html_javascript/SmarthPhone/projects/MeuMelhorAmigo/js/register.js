@@ -2,3 +2,8 @@
 function ready() {
 
 }
+
+//formulário foi preenchido e enviado
+function submitForm() {
+    alert("Register", "Successfull!");
+}
