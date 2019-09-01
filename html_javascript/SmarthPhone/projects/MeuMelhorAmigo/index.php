@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    include("php/getuservalues.php");
+    
+    if(!$_SESSION['usuario']) {
+        header('Location: login.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 
 <html>
@@ -36,7 +45,7 @@
             <div id="viewport-bottom">
                 <ul id="bottom-navbar">
                     <li>
-                        <button class="active bottom-navbar-button" id="home-button">
+                        <button class="bottom-navbar-button" id="home-button">
                             <i class="icon-home"></i>
                         </button>
                     </li>
@@ -56,7 +65,7 @@
                         </button>
                     </li>
                     <li>
-                        <button class="bottom-navbar-button" id="profile-button">
+                        <button class="active bottom-navbar-button" id="profile-button">
                             <i class="icon-profile"></i>
                         </button>
                     </li>

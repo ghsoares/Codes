@@ -13,6 +13,13 @@ html {
     margin-bottom: 3em;
 }
 
+#log-status {
+    color: red;
+    font-size: 3em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #title {
     color: white;
     font-size: 5em;
@@ -54,7 +61,7 @@ input[type="submit"] {
     border: 0.075em solid green;
     height: 2em;
     border-radius: 2em;
-    padding: 0 1em;
+    padding: 0 0.5em;
     outline: none;
     right: 0.5em;
 }

@@ -15,7 +15,6 @@ preload();
 
 //antes de iniciar a página
 function preload() {
-    logged();
 }
 
 //inicia com a página
@@ -27,19 +26,11 @@ function ready() {
     tabButtonsEvents();
 
     //adiciona os links
-    addLink(tab_buttons[0], "tabs/home.html");
-    addLink(tab_buttons[3], "tabs/user.html");
+    addLink(tab_buttons[0], "tabs/home.php");
+    addLink(tab_buttons[3], "tabs/user.php");
 
     //quando o iframe carregar
     page_iframe.onload = loaded;
-}
-
-//verifica se já logou no site
-function logged() {
-    var login_data = getCookie("log");
-    if (!login_data) {
-        window.location.href = "login.html";
-    }
 }
 
 //pega os elementos da página
@@ -76,12 +67,12 @@ function tabButtonsEvents() {
 
 //uma página está carregando
 function loading() {
-    loading_div.style.transform = "translateY(10em) rotateZ(45deg)";
+    loading_div.style.transform = "translateY(5em) rotateZ(45deg)";
 }
 
 //uma página carregou
 function loaded() {
-    loading_div.style.transform = "translateY(-30em) rotateZ(45deg)";
+    loading_div.style.transform = "translateY(-60em) rotateZ(45deg)";
 }
 
 //adiciona um link para uma página

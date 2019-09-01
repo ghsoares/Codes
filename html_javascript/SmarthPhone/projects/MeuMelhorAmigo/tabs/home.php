@@ -1,8 +1,12 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 
 <html>
 
 <head>
+    <base target="_parent">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../fonts/bottom-navbar-buttons/style.css">
     <link rel="stylesheet" type="text/css" href="../css/tab.css">

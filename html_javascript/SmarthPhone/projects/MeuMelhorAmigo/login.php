@@ -1,5 +1,12 @@
+<?php
+    session_start();
+    /* Vai checar se já está autenticado */
+    if(isset($_SESSION['usuario'])) {
+        header('Location: index.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -17,13 +24,23 @@
 <body onload="ready()">
     <div id="register-container">
         <h1 id="title"> SIGN IN </h1>
-        <form onsubmit="submitForm(this); return false">
+        <?php
+            if(isset($_SESSION['log_status'])):
+        ?>
+        <h1 id="log-status">
+            <?php echo $_SESSION['log_status'] ?>
+        </h1>
+        <?php
+            endif;
+            unset($_SESSION['log_status']);
+        ?>
+        <form action="php/login.php" method="POST">
             <input spellcheck="false" type="text" placeholder="Nick-Name" name="NickName">
             <input spellcheck="false" type="password" placeholder="Password" name="Password">
             <input type="submit" value="LOGIN">
         </form>
     </div>
-    <button id="redirect" onclick="window.location.href = 'register.html'">
+    <button id="redirect" onclick="window.location.href = 'register.php'">
         I don't have an account
     </button>
 </body>

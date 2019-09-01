@@ -36,5 +36,5 @@ function hideAlert() {
     var alert = top.document.getElementById("alert");
 
     //transform
-    $(alert).css("transform", "translateY(-20em)");
+    $(alert).css("transform", "translateY(-60em)");
 }
