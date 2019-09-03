@@ -1,0 +1,10 @@
+/* Arquivo exclusivo para debug */
+html {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #ff0000, #00ffff);
+}
+
+body {
+    margin: 0;
+}
