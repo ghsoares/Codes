@@ -32,7 +32,7 @@ $senha1 = mysqli_real_escape_string($conexao, $_POST['Password']);
 $senha2 = mysqli_real_escape_string($conexao, $_POST['RepeatedPassword']);
 
 /* Caso já tenha um nickname ou email igual no banco de dados */
-$query = "select * from usuario where nome_usuario = '{$nickname}' or email = '{$email}'";
+$query = "select * from usuario where nome = '{$nickname}' or email = '{$email}'";
 $result = mysqli_query($conexao, $query);
 if(mysqli_num_rows($result) != 0) {
     header('Location: ../register.php');
@@ -48,7 +48,7 @@ if ($senha1 != $senha2) {
 }
 
 /* Comando de query usado pelo banco de dados */
-$query = "insert into usuario (nome_usuario, email, senha, imagem_perfil) values ('{$nickname}', '{$email}', md5('{$senha1}'), 'https://www.flynz.co.nz/wp-content/uploads/profile-placeholder.png')";
+$query = "insert into usuario (nome, email, senha) values ('{$nickname}', '{$email}', md5('{$senha1}'))";
 
 /* Insere no banco de dados o query */
 if(mysqli_query($conexao, $query)) {
